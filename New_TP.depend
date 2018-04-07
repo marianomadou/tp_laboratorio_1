@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1522881936 source:c:\users\administrador\downloads\apuntes tecnicatura\pruebas en c\new_tp\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	<conio.h>
+
+1522881876 c:\users\administrador\downloads\apuntes tecnicatura\pruebas en c\new_tp\funciones.h
+
+1522881850 source:c:\users\administrador\downloads\apuntes tecnicatura\pruebas en c\new_tp\funciones.c
+	"funciones.h"
+
+1523138504 source:c:\users\mariano\desktop\tecnicatura-utn\programacion y laboratorio i\ejercicios&tp's\tp's\tp1\new_tp2\funciones.c
+	"funciones.h"
+
+1523139511 c:\users\mariano\desktop\tecnicatura-utn\programacion y laboratorio i\ejercicios&tp's\tp's\tp1\new_tp2\funciones.h
+
+1523139511 source:c:\users\mariano\desktop\tecnicatura-utn\programacion y laboratorio i\ejercicios&tp's\tp's\tp1\new_tp2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
