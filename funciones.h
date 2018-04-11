@@ -72,4 +72,17 @@ for (contador = numeroUno; contador >= 1; contador--)
     {factorial = factorial * contador;}
 */
 
+/** \brief Lee un numero ingresado
+ * \return Devuelve el numero ingresado flotante
+ *
+ */
+float leerNumero();
 
+
+/** \brief Lee un numero ingresado de opciones del menu, valida que sea entre minimo y maximo (1,9)
+ * \param minimo valor entero (1)
+ * \param maximo valor entero (9)
+ * \return un entero comprendido entre el minimo valor y el maximo valor
+ *
+ */
+int elegirOpciones(int min, int max);

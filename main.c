@@ -2,24 +2,10 @@
 #include <stdlib.h>
 #include "funciones.h"
 
+
 /*
 Trabajo práctico Nº 1 - Mariano Madou - Programacion y Laboratorio I - UTN-MINHACIENDA - Turno tarde
 */
-
-/** \brief Lee un numero ingresado
- * \return Devuelve el numero ingresado flotante
- *
- */
-float leerNumero();
-
-/** \brief Lee un numero ingresado de opciones del menu, valida que sea entre minimo y maximo (1,9)
- * \param minimo valor entero (1)
- * \param maximo valor entero (9)
- * \return un entero comprendido entre el minimo valor y el maximo valor
- *
- */
-int elegirOpciones(int min, int max);
-
 
 int main()
 {
@@ -160,24 +146,4 @@ int main()
 
 } /*fin del main*/
 
-float leerNumero()/*Lee el numero flotante*/
-{
-    float numero;
-    scanf("%f", &numero);
-    return numero;
-}
 
-int elegirOpciones(int min, int max) /*Esta funcion permite validar un numero del 1 al 9*/
-{
-    int opcion;
-    printf("Elegir opcion del 1 al 9.\nOpcion: ");
-    scanf("%d",&opcion);
-
-    while (opcion<min || opcion>max)
-    {
-        printf("*** ATENCION! Elegir opcion valida (del %d al %d) ***\n", min, max);
-        fflush(stdin);
-        scanf("%d",&opcion); /*Pide reingresar una opcion del 1 al 9*/
-    }
-    return opcion;
-}

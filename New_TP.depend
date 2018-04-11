@@ -10,12 +10,13 @@
 1522881850 source:c:\users\administrador\downloads\apuntes tecnicatura\pruebas en c\new_tp\funciones.c
 	"funciones.h"
 
-1523138504 source:c:\users\mariano\desktop\tecnicatura-utn\programacion y laboratorio i\ejercicios&tp's\tp's\tp1\new_tp2\funciones.c
+1523452398 source:c:\users\mariano\desktop\tecnicatura-utn\programacion y laboratorio i\ejercicios&tp's\tp's\tp1\new_tp2\funciones.c
 	"funciones.h"
+	<stdio.h>
 
-1523139511 c:\users\mariano\desktop\tecnicatura-utn\programacion y laboratorio i\ejercicios&tp's\tp's\tp1\new_tp2\funciones.h
+1523452424 c:\users\mariano\desktop\tecnicatura-utn\programacion y laboratorio i\ejercicios&tp's\tp's\tp1\new_tp2\funciones.h
 
-1523139511 source:c:\users\mariano\desktop\tecnicatura-utn\programacion y laboratorio i\ejercicios&tp's\tp's\tp1\new_tp2\main.c
+1523451981 source:c:\users\mariano\desktop\tecnicatura-utn\programacion y laboratorio i\ejercicios&tp's\tp's\tp1\new_tp2\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
