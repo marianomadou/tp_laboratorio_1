@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funciones.h"
-
+#define MIN_OPCION_FACTORIAL 0
+#define MAX_OPCION_FACTORIAL 13
+#define MIN_OPCION_MENU 1
+#define MAX_OPCION_MENU 9
 
 /*
 Trabajo práctico Nº 1 - Mariano Madou - Programacion y Laboratorio I - UTN-MINHACIENDA - Turno tarde
@@ -47,7 +50,7 @@ int main()
         printf("8- Calcular todas las operaciones\n");
         printf("9- Salir\n\n");
 
-        opcion = elegirOpciones(1, 9);
+        opcion = elegirOpciones(MIN_OPCION_MENU, MAX_OPCION_MENU);
 
         switch(opcion)
         {
@@ -98,8 +101,16 @@ int main()
 
         case 7:
 
-            resultadofactorizar = factorialRecursivo((int)numeroUno); /*Se ejecuta la funcion factorialRecursivo*/
-            printf("(%d!)= %d\n", (int)numeroUno, resultadofactorizar);
+            if (numeroUno <= MIN_OPCION_FACTORIAL || numeroUno >= MAX_OPCION_FACTORIAL)
+            {
+                printf("\n*** ATENCION! El programa calcula el factorial del numero %d al %d.\n Ingrese un numero entre %d y %d en el primer operando calcular su factorial ***\n", MIN_OPCION_FACTORIAL, MAX_OPCION_FACTORIAL, MIN_OPCION_FACTORIAL, MAX_OPCION_FACTORIAL);
+            }
+
+                else
+                {
+                    resultadofactorizar = factorialRecursivo((int)numeroUno); /*Se ejecuta la funcion factorialRecursivo*/
+                    printf("(%d!)= %d\n", (int)numeroUno, resultadofactorizar);
+                }
             break;
 
         case 8:
@@ -111,9 +122,9 @@ int main()
             resultado = restar(numeroUno, numeroDos);
             printf("\nResta (A-B): %.2f", resultado); /*Muestra el resultado de la resta*/
 
-            if (numeroDos < 0)
+            if (numeroDos == 0)
             {
-                printf("\n No es posible realizar esta operación");
+                printf("\n ***ATENCION! No es posible realizar esta operacion. \nIngrese un numero distinto de cero. ***");
             }
 
                 else
@@ -125,9 +136,17 @@ int main()
             resultado = multiplicar(numeroUno, numeroDos);
             printf("\nMultiplicacion (A*B): %.2f", resultado); /*Muestra el resultado de la multiplicacion*/
 
-            resultadofactorizar = factorialRecursivo((int)numeroUno);
-            printf("\nFactorizacion (A!): %d", resultadofactorizar); /*Muestra el resultado de la factorizacion*/
+            if (numeroUno <= MIN_OPCION_FACTORIAL || numeroUno >= MAX_OPCION_FACTORIAL)
+            {
+                printf("\n*** ATENCION! El programa calcula el factorial del numero %d al %d.\n Ingrese un numero entre %d y %d en el primer operando calcular su factorial ***\n", MIN_OPCION_FACTORIAL, MAX_OPCION_FACTORIAL, MIN_OPCION_FACTORIAL, MAX_OPCION_FACTORIAL);
+            }
 
+
+                else
+                {
+                    resultadofactorizar = factorialRecursivo((int)numeroUno);
+                    printf("\nFactorizacion (A!): %d", resultadofactorizar); /*Muestra el resultado de la factorizacion*/
+                }
             break;
 
         case 9:
